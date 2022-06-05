@@ -5,7 +5,8 @@ import { useFonts } from "expo-font";
 
 import Home from "./screens/Home";
 import Details from "./screens/Details";
-import Test from "./screens/Test";
+import Test from "./screens/Status";
+import Switch from "./screens/Switch";
 
 const theme = {
   ...DefaultTheme,
@@ -34,11 +35,11 @@ const App = () => {
         screenOptions={{
           headerShown: false,
         }}
-        initialRouteName="Test"
+        initialRouteName="Home"
       >
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Details" component={Details} />
-        <Stack.Screen name="Test" component={Test} />
+        <Stack.Screen name="Test" component={Switch} />
       </Stack.Navigator>
     </NavigationContainer>
   );
